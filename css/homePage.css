@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+}
+
+/* Top Bar */
+#topBar {
+  display: flex;
+  padding: 8px 25px;
+  border-bottom: 3px solid black;
+}
+
+#topBar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topBarRight {
+  margin: auto;
+}
+
+.topBarLeft {
+  width: 50%;
+}
+
+h4 {
+  font-style: bold;
+  color: #474747;
+  font-size: 20px;
+}
+
+h5 {
+  color: #474747;
+  font-size: 16px;
+}
+
+/* Home Top Content */
+.homeTopContent {
+  padding: 50px 50px;
+  display: flex;
+  background-color: #faebd6;
+  border-bottom: 2px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .homeTopContentRight {
+} */
+
+.homeTopContentRight img {
+  border: 2px solid black;
+  box-shadow: 7px 7px 5px gray;
+}
+
+.image1 {
+  display: block;
+}
+
+.image2 {
+  margin-top: -40px;
+  display: block;
+  margin-left: 50px;
+}
+
+.image3 {
+  display: block;
+  margin-top: -40px;
+  margin-left: 100px;
+}
+
+/* .homeTopContentLeft {
+} */
+
+h1 {
+  line-height: 30px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.homeTopContentLeft p {
+  width: 50%;
+  font-size: 18px;
+}
+
+.mainButton {
+  background-color: white;
+  color: #474747;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+.secondaryButton {
+  margin-left: 10px;
+  background-color: #faebd6;
+  color: #474747;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+/* Bottom Section */
+.homeBottomContent {
+  padding: 30px;
+  text-align: center;
+}
+
+.homeBottomContentParent {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.homeBottomContentParent p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #474747;
+}
+
+.homeBottomImage {
+  margin: 0px 15px 0px 15px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.imageWithText {
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
