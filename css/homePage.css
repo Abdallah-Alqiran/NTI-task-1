@@ -1,10 +1,12 @@
 * {
   margin: 0px;
+  box-sizing: border-box;
 }
 
 /* Top Bar */
 #topBar {
   display: flex;
+  width: 100%;
   padding: 8px 25px;
   border-bottom: 3px solid black;
 }
@@ -12,6 +14,10 @@
 #topBar a {
   text-decoration: none;
   color: inherit;
+}
+
+#topBar a:hover {
+  border-bottom: 6px solid #faebd6;;
 }
 
 .topBarRight {
@@ -33,22 +39,32 @@ h5 {
   font-size: 16px;
 }
 
+
+
+
 /* Home Top Content */
 .homeTopContent {
   padding: 50px 50px;
   display: flex;
+  width: 100%;
   background-color: #faebd6;
   border-bottom: 2px solid black;
   align-items: center;
   justify-content: center;
 }
 
-/* .homeTopContentRight {
-} */
+.homeTopContentRight {
+  width: 50%;
+}
 
 .homeTopContentRight img {
   border: 2px solid black;
   box-shadow: 7px 7px 5px gray;
+}
+
+.homeTopContentRight a {
+  display: block;
+  width: fit-content;
 }
 
 .image1 {
@@ -88,13 +104,26 @@ h1 {
   padding: 10px 10px;
 }
 
+.mainButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 .secondaryButton {
-  margin-left: 10px;
   background-color: #faebd6;
   color: #474747;
   font-weight: bold;
   padding: 10px 10px;
 }
+
+.secondaryButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 
 /* Bottom Section */
 .homeBottomContent {
@@ -109,9 +138,9 @@ h1 {
 }
 
 .homeBottomContentParent p {
-    font-size: 14px;
-    font-weight: 100;
-    color: #474747;
+  font-size: 14px;
+  font-weight: 100;
+  color: #474747;
 }
 
 .homeBottomImage {
@@ -136,4 +165,99 @@ h2 {
 h3 {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media(max-width: 426px) {
+
+* {
+  width: 100%;
+}
+
+/* Top Bar */
+#topBar {
+  display: flex;
+  width: 100%;
+  padding: 8px 8px;
+  border-bottom: 3px solid black;
+}
+.topBarRight {
+  width: 40%;
+}
+
+h4 {
+  font-style: bold;
+  color: #474747;
+  font-size: 16px;
+}
+
+h5 {
+  color: #474747;
+  font-size: 14px;
+}
+
+/* Home Top Content */
+.homeTopContent {
+  padding: 20px 20px;
+  display: block;
+  width: 100%;
+  background-color: #faebd6;
+  border-bottom: 2px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.homeTopContentLeft {
+  margin-bottom: 30px;
+}
+.homeTopContentLeft p {
+  width: 100%;
+  font-size: 18px;
+}
+
+.image1 {
+  display: block;
+}
+
+.image2 {
+  margin-top: -30px;
+  display: block;
+  margin-left: 40px;
+}
+
+.image3 {
+  display: block;
+  margin-top: -30px;
+  margin-left: 90px;
+}
+
+
+/* Bottom Section */
+
+.homeBottomContent {
+  padding: 5px;
+}
+
+.homeBottomContentParent {
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+
+.imageWithText {
+  display: block;
+}
+
+.homeBottomContentParent table {
+  width: 100%;
+}
+
+.homeBottomContentParent td {
+  width: 50%;
+  padding: 10px;
+}
+
 }
